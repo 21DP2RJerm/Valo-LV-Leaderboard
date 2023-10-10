@@ -17,7 +17,7 @@
 
 #toolbar{
     backdrop-filter: blur(20px);
-    width: 180vh;
+    width: 177.5vh;
     height: 13vh;
     position: absolute;
     left: 0px;

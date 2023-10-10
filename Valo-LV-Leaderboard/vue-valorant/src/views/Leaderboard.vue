@@ -15,9 +15,14 @@ export default {
 
     <div id="leaderboard">
         <div id="player">
-
+          <div id="placement entity" class="text">1</div>
+          <div id="Username entity" class="text">Jertix</div>
+          <div id="rating entity" class="text">368</div>
+          <div id="rank entity"><img src="../assets/immo2.png" alt="rank" id="rank"></div>
         </div>
     </div>
+
+    
     <img src="../assets/valorantbck.jpg" alt="background" id="background">
 
     <toolbar>
@@ -26,6 +31,16 @@ export default {
 </template>
 
 <style scoped>
+  #entity{
+    padding-left: 10%;
+  }
+  .text{
+    color: aliceblue;
+    font-size: x-large;
+  }
+  #rank{
+    max-width: 50px;
+  }
   #body{
     padding: 0;
     margin: 0;
@@ -48,7 +63,7 @@ export default {
     height: 90vh;
     border: 5px solid #495057;
     position: absolute;
-    top: 70%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
@@ -61,5 +76,7 @@ export default {
     height: 10vh;
     left: 3vh;
     border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 </style>
