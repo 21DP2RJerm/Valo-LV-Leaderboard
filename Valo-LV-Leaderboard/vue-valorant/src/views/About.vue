@@ -14,7 +14,7 @@ export default {
     <img src="../assets/valorantbck.jpg" alt="background" id="background">
 
     <div id="about">
-
+       
     </div>
     <toolbar>
 
