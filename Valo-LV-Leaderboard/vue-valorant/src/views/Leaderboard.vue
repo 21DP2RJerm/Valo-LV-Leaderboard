@@ -40,6 +40,7 @@ export default {
   }
   #rank{
     max-width: 50px;
+    top:-15px;
   }
   #body{
     padding: 0;
@@ -71,6 +72,7 @@ export default {
     box-shadow: 0px 0px 20px 2px black;
 }
 #player{
+  padding: 10px;
     position: inherit;
     width: 76vh;
     height: 10vh;
