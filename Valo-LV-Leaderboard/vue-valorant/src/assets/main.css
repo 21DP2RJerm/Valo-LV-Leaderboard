@@ -2,6 +2,7 @@
 .body
 {
     padding: 0;
+    overflow: hidden;
 }
 .font-head{
     font-family: 'Kanit', sans-serif;
