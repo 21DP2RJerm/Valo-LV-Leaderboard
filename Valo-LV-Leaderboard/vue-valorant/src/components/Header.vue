@@ -29,11 +29,6 @@
     position: absolute;
     left: 0px;
     top: 0px;
-
-    
-
-
-
 }
 #routers{
     width:0px;
@@ -58,12 +53,5 @@
     color:white ;
     background-color: transparent;
     border:3px solid white;
-   
-    
-   
-
-
-    
-
 }
 </style>

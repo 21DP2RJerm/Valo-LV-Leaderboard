@@ -14,7 +14,7 @@
 
             <input type="password" id="textbar" name="Password" placeholder="  Password">
         </form> <br><br><br>
-        <router-link to='/' id="title"><button id="signin" style="background-color: aliceblue;">Sign in</button> </router-link>
+        <router-link to='/' ><button id="signin" style="background-color: aliceblue;">Sign in</button> </router-link>
     </div>
 
     <div id="thing">
@@ -27,6 +27,9 @@
 
 </script>
 <style>
+body{
+    overflow: hidden;
+}
 #parent{
     max-width: 100%;
     max-height: 100%;
@@ -85,5 +88,6 @@
     border-color: black solid;
     
 }
+
 
 </style>

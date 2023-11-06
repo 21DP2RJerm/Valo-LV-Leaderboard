@@ -18,10 +18,9 @@ export default {
     
 
     <div id="post">
-        <img src="../assets/pfp.png" alt="profilepic" id="pfp">
-        <div id="username">Jertixsdsdsds</div>
-        <img src="../assets/immo2.png" alt="rank" id="rank">
-      <div id="bio">Mekleju forsus cilvecinus ar kuriem casualy paspelet speliti. Gaidu atbildes no jebkura</div>
+      <div id="username" class="font-normal">Jertixsdsdsds</div>
+      <img src="../assets/immo2.png" alt="rank" id="rank">    
+      <div id="bio" class="font-normal">Mekleju forsus cilvecinus ar kuriem casualy paspelet speliti. Gaidu atbildes no jebkura</div>
     </div>
     <img src="../assets/valorantbck.jpg" alt="background" id="background">
     
@@ -37,8 +36,8 @@ export default {
    
   }
   #post{
-    width: 60vh;
-    height: 15vh;
+    width: 32vh;
+    height: 20vh;
     background-color: aliceblue;
     position: absolute;
     top: 35%;
@@ -46,34 +45,25 @@ export default {
     transform: translate(-50%, -50%);
     border-radius: 50px;
     display: flex;
-    justify-content:left;
-    
-  }
-  #pfp{
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 20px;
-    left: 10px;
-    top: 10px;
-    position: relative;
-    padding: 10px;
+    white-space: normal;
   }
   #username{
     font-size:xx-large;
     position: relative;
-    padding: 4px;
-    top: 16px;
+    padding: 10px;
+    top: 5px;
   }
   #rank{
-    top: 16px;
-
+    top: 5px;
     max-width: 50px;
     max-height: 50px;
     padding: 4px;
     position: relative;
   }
   #bio{
-    position: relative;
-    top: 10px;
+    position: absolute;
+    top: 5vh;;
+    padding: 10px;
   }
+
 </style>

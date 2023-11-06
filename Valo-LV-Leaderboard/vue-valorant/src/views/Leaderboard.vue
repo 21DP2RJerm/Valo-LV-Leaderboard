@@ -13,11 +13,17 @@ export default {
 <template id="body">
  
 
-    <div id="leaderboard">
+    <div id="leaderboard"><br>
         <div id="player">
-          <div id="placement entity" class="text">1</div>
-          <div id="Username entity" class="text">Jertix</div>
-          <div id="rating entity" class="text">368</div>
+          <div id="placement entity" class="text font-normal">1</div>
+          <div id="Username entity" class="text font-normal">Jertix</div>
+          <div id="rating entity" class="text font-normal">368</div>
+          <div id="rank entity"><img src="../assets/immo2.png" alt="rank" id="rank"></div>
+        </div>
+        <div id="player">
+          <div id="placement entity" class="text font-normal">2</div>
+          <div id="Username entity" class="text font-normal">Trakais</div>
+          <div id="rating entity" class="text font-normal">321</div>
           <div id="rank entity"><img src="../assets/immo2.png" alt="rank" id="rank"></div>
         </div>
     </div>
@@ -72,10 +78,10 @@ export default {
     box-shadow: 0px 0px 20px 2px black;
 }
 #player{
-  padding: 10px;
-    position: inherit;
+    padding: 0 10px;
+    position: relative;
     width: 76vh;
-    height: 10vh;
+    height: 6vh;
     left: 3vh;
     border-radius: 40px;
     display: flex;
