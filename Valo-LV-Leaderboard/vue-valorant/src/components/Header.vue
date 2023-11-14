@@ -8,50 +8,58 @@
     <div id="toolbar">
         <img src="../assets/valologo.png" id="logo">
         <div id="links">
-            <router-link to='/' class="routers" > <a href="url" id="title" class="font-head">Leaderboard</a> </router-link>
-            <router-link to='/lft' class="routers" > <a href="url" id="title" class="font-head">LFT/LFG    </a> </router-link>   
-            <router-link to='/about' class="routers"> <a href="url" id="title" class="font-head">About      </a> </router-link>   
-            <router-link to='/signin' class="routers"> <a href="url"  id="title" class="font-head">Sign In    </a> </router-link>
+            <div id="link"> <img src="../assets/leaderboard.png" id="image"> <router-link to='/' class="routers" > <a href="url" id="title" class="font-head">Leaderboard</a> </router-link> </div>
+            <div id="link"> <img src="../assets/plus.png" id="image"> <router-link to='/lft' class="routers" > <a href="url" id="title" class="font-head">LFT/LFG    </a> </router-link>   </div>
+            <div id="link"> <img src="../assets/info.png" id="image"> <router-link to='/about' class="routers"> <a href="url" id="title" class="font-head">About      </a> </router-link>   </div>
+            <div id="link"> <img src="../assets/profile.png" id="image"> <router-link to='/signin' class="routers"> <a href="url"  id="title" class="font-head">Sign In    </a> </router-link> </div>
         </div>
         
     </div>
 </template>
 
 <style>
-#logo{
-    max-width: 100px;
-    position: absolute;
-}
 #toolbar{
-    backdrop-filter: blur(20px);
-    width: 100%;
-    height: 13vh;
+    width: 10vh;
+    height: 100vh;
     position: absolute;
-    left: 0px;
+    background-color: #495057;
     top: 0px;
+    left: 0px;
 }
-#routers{
-    width:0px;
+#toolbar:hover{
+    width: 30vh;
 }
-#links {
-    position: absolute;
-    display:grid;
-    grid-template-columns: auto auto auto auto;
-    width: 50%;
-    right: 0px;
-    top: 20px;
+#toolbar:hover #title{
+    display:contents;
+}
+#toolbar:hover #image{
+    display:none;
+}
+#logo{
+    max-width: 8vh;
+    padding: 1vh;
+}
+#links{
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 #title{
-    top: 15px;
-    height: 40px;
-    width: 200px;
     text-decoration: none;
     cursor: pointer;
-    position: absolute;
-    text-align: center;
     color:white ;
     background-color: transparent;
-    border:3px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+#image{
+    max-width: 40px;
+    display: contents;
 }
 </style>
