@@ -8,23 +8,25 @@
     <div id="toolbar">
         <img src="../assets/valologo.png" id="logo">
         <div id="links">
-            <div id="link"> <img src="../assets/leaderboard.png" id="image"> <router-link to='/' class="routers" > <a href="url" id="title" class="font-head">Leaderboard</a> </router-link> </div>
-            <div id="link"> <img src="../assets/plus.png" id="image"> <router-link to='/lft' class="routers" > <a href="url" id="title" class="font-head">LFT/LFG    </a> </router-link>   </div>
-            <div id="link"> <img src="../assets/info.png" id="image"> <router-link to='/about' class="routers"> <a href="url" id="title" class="font-head">About      </a> </router-link>   </div>
-            <div id="link"> <img src="../assets/profile.png" id="image"> <router-link to='/signin' class="routers"> <a href="url"  id="title" class="font-head">Sign In    </a> </router-link> </div>
+            <img src="../assets/leaderboard.png" id="image"> <router-link to='/' class="routers" > <a href="url" id="title" class="font-head">Leaderboard</a> </router-link> 
+            <img src="../assets/plus.png" id="image"> <router-link to='/lft' class="routers" > <a href="url" id="title" class="font-head">LFT/LFG    </a> </router-link>   
+            <img src="../assets/info.png" id="image"> <router-link to='/about' class="routers"> <a href="url" id="title" class="font-head">About      </a> </router-link>  
+            <img src="../assets/profile.png" id="image"> <router-link to='/signin' class="routers"> <a href="url"  id="title" class="font-head">Sign In    </a> </router-link> 
         </div>
         
     </div>
 </template>
 
 <style>
+
 #toolbar{
     width: 10vh;
     height: 100vh;
     position: absolute;
-    background-color: #495057;
+    background: rgba(0,0,0,0.3);
     top: 0px;
     left: 0px;
+    transition: width 300ms ease;
 }
 #toolbar:hover{
     width: 30vh;
@@ -38,6 +40,7 @@
 #logo{
     max-width: 8vh;
     padding: 1vh;
+    
 }
 #links{
     list-style: none;
@@ -46,9 +49,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-decoration: none;
     
 }
+
+#links a {
+   text-decoration: none;
+}
+
 #title{
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-decoration: none;
     cursor: pointer;
     color:white ;

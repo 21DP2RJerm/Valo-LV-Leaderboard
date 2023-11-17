@@ -6,18 +6,19 @@
 
     <div id="Signin">
         <br><br><br><br><br><br><br><br><br><br><br><br>
-        <h1 id="text" class="text font-normal" style="font-size:xxx-large;">Sign in</h1>
+        <h1 id="text" style="font-size:xxx-large;" class="text font-normal">Sign up</h1>
         <form>
 
             <input type="text" id="textbar" name="Username" placeholder="  Username" class="text font-normal"><br>
             <br><br><br>
 
-            <input type="password" id="textbar" name="Password" placeholder="  Password" class="text font-normal">
+            <input id="textbar" name="Password" placeholder="  Password" class="text font-normal">
+            <br><br><br>
+
+            <input type="text" id="textbar" name="tracker" placeholder="  tracker.gg link" class="text font-normal">
         </form> <br><br><br>
         <div id="buttons">
-            <router-link to='/' ><button id="button" style="background-color: aliceblue;" class="text font-normal">Sign in</button> </router-link>
-            <br>
-            <router-link to='/signup' class="router" ><button id="button" style="background-color: aliceblue;" class="text font-normal">Sign up</button> </router-link>
+            <router-link to='/' ><button id="button" style="background-color: aliceblue;" class="text font-normal">Sign up</button> </router-link>
         </div>
         
     </div>
@@ -76,6 +77,7 @@ body{
     background-color: aliceblue;
     height: 4vh;
     width: 25vh;
+    padding-left: 10px;
 
 }
 #text{
