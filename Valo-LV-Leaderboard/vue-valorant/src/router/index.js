@@ -4,6 +4,7 @@ import SignIn from '../views/SignIn.vue'
 import About from '../views/About.vue'
 import LFT from '../views/LFT.vue'
 import SignUp from '../views/SignUp.vue'
+import Profile from '../views/Profile.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,6 +34,11 @@ const router = createRouter({
       path: '/signup',
       name: 'signup',
       component: SignUp
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: Profile
     },
   ]
 })
