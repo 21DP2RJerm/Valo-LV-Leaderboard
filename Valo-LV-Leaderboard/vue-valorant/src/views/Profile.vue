@@ -14,7 +14,12 @@ export default {
 
   <div id="profileblock">
 
-    <img src="../assets/immo2.png" alt="rank" id="rank">
+    <img src="../assets//pfp.png " alt="pfp" id="pfp">
+    <div id="userdata">
+      <div id="name" class="font-head">Jertix</div>
+      <img src="../assets/immo2.png" alt="rank" id="rank">
+    </div>
+    
 
   </div>
 
@@ -39,5 +44,23 @@ export default {
     transform: translate(-50%, -50%);
     background: rgba(0,0,0,0.3);
     border-radius: 50px;
+  }
+  #pfp{
+    width: 150px;
+    padding: 30px;
+  }
+  #name{
+    color: aliceblue;
+    margin-right: 15px;
+  }
+  #rank{
+    top: -2px;
+  }
+  #userdata{
+    position: absolute;
+    display: flex;
+    height: 50px;
+    left: 200px;
+    top: 130px;
   }
 </style>

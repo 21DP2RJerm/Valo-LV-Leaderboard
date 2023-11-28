@@ -34,9 +34,7 @@
 #toolbar:hover #title{
     display:contents;
 }
-#toolbar:hover #image{
-    display:none;
-}
+
 #logo{
     max-width: 8vh;
     padding: 1vh;
